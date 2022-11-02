@@ -63,7 +63,7 @@ if choice == 'A':
     sleep(2)
     
 
-    choice = input("A/B:  ")
+    choice = input("A/B/C:  ")
     sleep(2)
 
 
@@ -271,13 +271,52 @@ elif choice == 'B':
 
         else:
             print("Invalid answer")
+    
+    
+    elif choice == 'C':
+        print("So anyways, u start blastin.")
+        sleep(3)
+        print("An alarm gets sent out to militech of an attack on the boarder.")
+        sleep(3)
+        
+        print("Do you:")
+        print("A: flee back into the desert")
+        sleep(2)
+        print("B: keep fighting")
+        
+        choice = input("A/B:  ")
+
+        if choice == 'A':
+            print("You run back into the desert.")
+            sleep(3)
+            print("Do you")
+            sleep(2)
+            print("A: Return to your gang.")
+            print("B: Game end yourself.")
+            
+            choice = input("A/B:  ")
+
+            if choice == 'A':
+                print("You go back to your gang.")
+                sleep(3)
+                print("They call you a traitor, they kill you and take the sandevistan.")
+
+        elif choice == 'B':
+            print("You keep fighting")
+            sleep(3)
+            print("But it doesnt go on for long.")
+            sleep(5)
+            print("Game over.")
+            print("secret ending 1/2")
+
+
+        else:
+            print("Invalid answer")
 
 
     else:
         print("Invalid answer")
-
-
-    
+   
 
 else:
     print("Invalid Answer")
